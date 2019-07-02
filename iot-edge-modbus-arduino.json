@@ -1,0 +1,44 @@
+﻿{
+  "PublishInterval": "11000",
+  "SlaveConfigs": {
+    "Slave01": {
+      "SlaveConnection": "/dev/ttyUSB0",
+      "HwId": "RPi",
+      "BaudRate": "9600",
+      "DataBits": "8",
+      "StopBits": "1",
+      "Parity": "NONE",
+      "FlowControl": "NONE",
+      "Operations": {
+        "Op01": {
+          "PollingInterval": "1000",
+          "UnitId": "1",
+          "StartAddress": "00001",
+          "Count": "2",
+          "DisplayName": "COIL"
+        },
+        "Op02": {
+          "PollingInterval": "1000",
+          "UnitId": "1",
+          "StartAddress": "10003",
+          "Count": "2",
+          "DisplayName": "DISCRETE_INPUT"
+        },
+        "Op03": {
+          "PollingInterval": "1000",
+          "UnitId": "1",
+          "StartAddress": "40005",
+          "Count": "2",
+          "DisplayName": "HOLDING_REGISTERS"
+        },
+        "Op04": {
+          "PollingInterval": "1000",
+          "UnitId": "1",
+          "StartAddress": "30007",
+          "Count": "7",
+          "DisplayName": "INPUT_REGISTERS"
+        }
+      }
+    }
+  }
+}
